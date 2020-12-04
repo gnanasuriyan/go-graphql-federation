@@ -1,0 +1,18 @@
+type Product @key(fields: "id"){
+  id: Int!
+  name: String!
+  price: Float!
+}
+
+type ProductList {
+  total: Int!
+  data: [Product!]!
+}
+
+extend type Query {
+  topProducts(first: Int = 5): ProductList!
+}
+
+type Mutation {
+  createProduct(name: String!, price: Float!): Product!
+}

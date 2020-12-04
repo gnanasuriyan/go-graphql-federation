@@ -1,0 +1,28 @@
+{
+  "name": "federation",
+  "version": "1.0.0",
+  "description": "federation service",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node run index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/gnanasuriyan/federation.git"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "federation",
+    "gengql",
+    "go-graphql"
+  ],
+  "author": "Gnanasuriyan",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/gateway": "^0.21.0",
+    "apollo-server": "^2.19.0",
+    "graphql": "^15.4.0"
+  }
+}

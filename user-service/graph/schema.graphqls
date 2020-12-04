@@ -1,0 +1,19 @@
+type User @key(fields: "id") {
+  id: Int!
+  username: String!
+}
+
+type UserList {
+  total: Int!
+  data: [User!]!
+}
+
+extend type Query {
+  me: User
+  listUsers: UserList
+}
+
+type Mutation {
+  createUser(name: String!): User
+}
+
